@@ -24,7 +24,8 @@ namespace CnD
 
 		void Card::Print() const
 		{
-			if (m_IsHidden) std::cout << "XXXXXXX of XXXXXXX" << std::endl;
+			std::cout << '\t';
+			if (m_IsHidden) std::cout << "X of XXXXXXX" << std::endl;
 			else
 			{
 				if (m_Suit == Suit::Joker) std::cout << "Joker" << std::endl;
